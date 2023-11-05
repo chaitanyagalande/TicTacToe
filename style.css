@@ -16,6 +16,12 @@ body{
     font-size: 50px;
     cursor: pointer;
     background-color: white;
+    box-shadow: 7px 7px 2px #999;
+}
+
+.cell:hover{
+    background-color: rgb(246, 246, 246);
+    transform: translate(-2px, -2px);
 }
 
 #gameContainer{
@@ -37,4 +43,24 @@ body{
     font-family: cursive, chalkboard;
     border: 2px solid black;
     border-radius: 10px;
+    box-shadow: 0 6px #999;
+}
+
+#restartBtn:hover{
+    background-color: rgba(245, 222, 179, 0.666);
+}
+
+#restartBtn:active{
+    box-shadow: 0 2px #999;
+    transform: translateY(4px);
+}
+
+.red-symbol {
+    color: red;
+    border: 2px solid black;
+}
+
+.blue-symbol {
+    color: blue;
+    border: 2px solid black;
 }

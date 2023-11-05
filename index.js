@@ -37,9 +37,19 @@ function cellClicked(){
     checkWinner();
 }
 
-function updateCell(cell, index){
+function updateCell(cell, index) {
     options[index] = currentPlayer;
     cell.textContent = currentPlayer;
+
+    // Remove existing symbol classes
+    cell.classList.remove("red-symbol", "blue-symbol");
+
+    // Add the appropriate symbol class based on the current player
+    if (currentPlayer === "X") {
+        cell.classList.add("red-symbol");
+    } else {
+        cell.classList.add("blue-symbol");
+    }
 }
 
 function changePlayer(){
@@ -81,7 +91,7 @@ function checkWinner(){
 
 function restartGame(){
     currentPlayer = "X";
-    let options = ["", "", "", "", "", "", "", "", ""];
+    options = ["", "", "", "", "", "", "", "", ""];
     statusText.textContent = `${currentPlayer}'s turn`;
     cells.forEach(cell => cell.textContent = "");
     running = true;
