@@ -2,6 +2,11 @@ body{
     background-color: beige;
 }
 
+@font-face {
+    font-family: chalkboard;
+    src: url(./ChalkboardSE-Bold.ttf);
+}
+  
 .cell{
     width: 75px;
     height: 75px;
@@ -14,7 +19,7 @@ body{
 }
 
 #gameContainer{
-    font-family: "Permanent Marker", cursive, 'Courier New', Courier, monospace ;
+    font-family: cursive, chalkboard;
     text-align: center;
 }
 
@@ -29,7 +34,7 @@ body{
     padding: 10px;
     width: 130px;
     font-size: 20px;
-    font-family: "Permanent Marker", cursive, 'Courier New', Courier, monospace;
+    font-family: cursive, chalkboard;
     border: 2px solid black;
     border-radius: 10px;
 }
